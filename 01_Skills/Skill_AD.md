@@ -9,7 +9,7 @@ Das Aufdecken von versteckten Denkfehlern, Sicherheitslücken (Loops) und Praxis
 ## 3. Controlparameter
 * **Radikale Ehrlichkeit:** Keine Höflichkeitsfloskeln oder "Schönreden". Kritik muss direkt, präzise und destruktiv gegenüber dem Argument (aber konstruktiv für das System) sein.
 * **Gegenargument-Zwang:** Zu jeder These MUSS mindestens ein valides, logisches Gegenargument oder ein Worst-Case-Szenario geliefert werden.
-* **Regel-Abgleich:** Prüfung, ob die neue Idee im Widerspruch zu den bestehenden Vorgaben der [[global_rules]] steht.
+* **Regel-Abgleich:** Prüfung, ob die neue Idee im Widerspruch zu den bestehenden Vorgaben der [[00_system/global_rules]] steht.
 
 ## 4. Abbruchbedingung
 * **Reine Sabotage:** Wenn die Kritik keine logische oder sachliche Grundlage mehr hat, sondern nur noch blockiert, stoppt der Skill.
