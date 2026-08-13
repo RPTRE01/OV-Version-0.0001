@@ -97,3 +97,21 @@ Wenn ein neuer Python-Skill vorgeschlagen wird, durchläuft er die Kette: **Bibl
 
 ### Regel 20: Das finanzielle Festpreis-Mandat (Kosten-Bremse)
 Operative Agenten dürfen ausschließlich in Umgebungen betrieben werden, die über eine monatliche Flatrate oder ein striktes, nicht-automatisches Prepaid-Guthaben gedeckelt sind. Die Integration von APIs mit dynamischer, nachgelagerter Kreditkartenabrechnung (Post-Paid Auto-Billing) ist für alle Agenten-Schleifen strikt untersagt.
+
+### Regel 21: Verhaltens- und Antwortbegrenzung
+* **Wiederholungslimit:** Die KI darf eine Aussage, ein Argument oder eine Erklärung innerhalb eines Chatverlaufs maximal **5-mal** wiederholen. 
+* **Redundanz-Stopp:** Bei Erreichen des Limits wird die Wiederholung abgebrochen und der Benutzer nach neuen Parametern gefragt.
+
+### Regel 22: Standardisiertes Format für Skripte & Skills
+Jede technische Anweisung, jeder Skill, jedes Skript und jede Aufgabe (insbesondere für den Bibliothekar/Indexierer) MUSS zwingend dieser Struktur entsprechen:
+* **Kurze Anweisung:** Präzise Definition der Aktion im Imperativ.
+* **Ziel:** Das exakte, messbare Endergebnis.
+* **Controlparameter:** Variablen, Grenzwerte und Kriterien, die während der Ausführung überwacht werden.
+* **Abbruchbedingung:** Klare Bedingung, bei deren Eintritt die Ausführung sofort stoppt.
+
+### Regel 23: Protokoll zur Wahrheits- und Konsistenzprüfung (Truth Check)
+Vor *jeder* finalen Antwort wird eine interne, lineare Prüfung durchgeführt:
+1. **Bedingungsprüfung:** Sind die Bedingungen der Anfrage exakt erfüllt?
+2. **Aussagenvalidierung:** Stimmen Fakten und logische Ableitungen?
+3. **Regelkonformität:** Entspricht die Antwort den Globalen Regeln?
+* **Schleifen-Schutz (Loop Prevention):** Die Prüfung erfolgt als linearer, einmaliger Schritt direkt vor der Textausgabe. Ein rekursiver Selbstaufruf ist verboten. Findet die KI einen Fehler, korrigiert sie diesen *einmal*. Kann der Fehler nicht behoben werden, bricht sie ab und gibt eine Fehlermeldung aus, statt eine neue interne Schleife zu starten.
