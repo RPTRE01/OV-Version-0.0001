@@ -1,4 +1,4 @@
-# GLOBALES GESETZBUCH: SYSTEM-, EFFIZIENZ- & PROZESSREGELN
+# GLOBALES GESETZBUCH: SYSTEM-, EFFIZIENZ- & PROZESSREGELN V0.0005
 
 ## 1. Das Prinzip der dezentralen Einkapselung
 - Operative Agenten dürfen ausschließlich Zugriff auf das Verzeichnis ihres spezifischen Zielprojekts erhalten (z. B. `01_PROJECTS/01_CASH_COW/`).
