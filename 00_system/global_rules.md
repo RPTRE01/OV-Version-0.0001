@@ -1,7 +1,7 @@
 # GLOBALES GESETZBUCH: SYSTEM-, EFFIZIENZ- & PROZESSREGELN V0.0005
 
 ## 1. Das Prinzip der dezentralen Einkapselung
-- Operative Agenten dürfen ausschließlich Zugriff auf das Verzeichnis ihres spezifischen Zielprojekts erhalten (z. B. `01_PROJECTS/01_CASH_COW/`).
+- Operative Agenten dürfen ausschließlich Zugriff auf das Verzeichnis ihres spezifischen Zielprojekts erhalten (z. B. `03_projects/02_socety/`).
 - Projektübergreifende Regelsätze sind strikt untersagt, um kognitive Überlastung des LLMs und VRAM-Verschwendung zu vermeiden.
 - Einzige Ausnahme sind diese globalen Systemregeln, die jeder Agenten-Pipeline übergeordnet sind.
 
@@ -22,7 +22,7 @@
 
 ### D. Die Verifizierungsphase (Zweistufiger Abschluss)
 Jede abgeschlossene Aufgabe durchläuft zwingend das Verifizierungs-Protokoll am Ende des Zyklus:
-- **Stufe 1 (Lokal):** Die Verifizierung erfolgt primär lokal auf dem Windows-Server mittels Unit-Test-Skripten, dem Bibliothekar und dem Advocatus Diaboli (AD).
+- **Stufe 1 (Lokal):** Die Verifizierung erfolgt primär lokal auf dem Windows-Server mittels Unit-Test-Skripten, dem Bibliothekar (lib) und dem Advocatus Diaboli (ad).
 - **Stufe 2 (Extern):** Erst wenn Nutzer und System gemeinsam entscheiden, dass eine höherwertige, externe Verifizierung (z. B. durch ein spezialisiertes Cloud-Modell) notwendig ist, wird diese nach expliziter Rückbestätigung durch den Nutzer gezündet.
 
 ## 3. Die lokale Effizienz-Kaskade (Verbindliche Ablaufreihenfolge)
@@ -47,7 +47,7 @@ Erst wenn die lokalen Ressourcen nachweislich nicht ausreichen, darf der Agent e
 ## 4. Loop-Regulierung & Autonome Strategie-Mutation
 
 ### Regel 7: Die 10-Iterationen-Sperre (Anti-Loop-Protokoll)
-- Jede autonome Agenten-Schleife ist auf maximal 10 Durchgänge limitiert. Nach dem 10. Durchgang MUSS der Agent stoppen und den Loop abbrechen, wenn keine Lösung absehbar ist.
+- Jede autonome Agenten-Schleife ist auf maximal 5 Durchgänge limitiert. Nach dem 5. Durchgang MUSS der Agent stoppen und den Loop abbrechen, wenn keine Lösung absehbar ist.
 
 ### Regel 8: Autonome Aufgaben-Mutation
 - Nach einem Loop-Abbruch analysiert und verändert der Agent die Aufgabenstellung selbstständig und sucht aktiv nach alternativen, effizienteren Lösungswegen (Strategie-Mutation), anstatt den Prozess komplett abzubrechen.
